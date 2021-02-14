@@ -54,7 +54,7 @@ NSString *const HHANextItemNamePrefsKey = @"NextItemName";
 
     BOOL success = [[HHAItemStore sharedStore] saveChanges];
     if (success) {
-        NSLog(@"Saved all of the HHAItems");
+        NSLog(@"Saved all of the HHAItems!!!");
     } else {
         NSLog(@"Could not save any of the HHAItems");
     }
