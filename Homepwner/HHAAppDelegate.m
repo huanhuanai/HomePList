@@ -9,6 +9,7 @@
 #import "HHAAppDelegate.h"
 #import "HHAItemStore.h"
 #import "HHAItemsViewController.h"
+#import "HHAReminderViewController.h"
 
 NSString *const HHANextItemValuePrefsKey = @"NextItemValue";
 NSString *const HHANextItemNamePrefsKey = @"NextItemName";
@@ -31,18 +32,19 @@ NSString *const HHANextItemNamePrefsKey = @"NextItemName";
     
     //如果应用没有触发状态恢复，就创建并设置各个视图控制器
     if (!self.window.rootViewController) {
+        UITabBarController *tabC = [[UITabBarController alloc] init];
     HHAItemsViewController *itemsViewController = [[HHAItemsViewController alloc] init];
-
     //创建UINavigationController对象
     //该对象的栈只包含itemsViewController
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:itemsViewController];
-
+        HHAReminderViewController *reminderController = [[HHAReminderViewController alloc] initWithNibName:@"HHAReminderViewController" bundle:[NSBundle mainBundle]];
+    tabC.viewControllers = @[navController, reminderController];
     //将UINavigatonController对象的类名设置为恢复标识
     navController.restorationIdentifier = NSStringFromClass([navController class]);
     
     //将UINavigationController对象设置为UIWindow的根视图控制器，
     //这样就可以将UINavigationController对象的视图添加到屏幕上
-    self.window.rootViewController = navController;
+    self.window.rootViewController = tabC;
     }
     [self.window makeKeyAndVisible];
 

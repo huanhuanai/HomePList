@@ -31,7 +31,8 @@
     if (self) {
         UINavigationItem *navItem = self.navigationItem;
         navItem.title = NSLocalizedString(@"HomePList", @"Name of application");
-
+        self.tabBarItem.image = [UIImage imageNamed:@"baozhu.png"];
+        self.tabBarItem.title = @"红包";
         self.restorationIdentifier = NSStringFromClass([self class]);
         self.restorationClass = [self class];
         
