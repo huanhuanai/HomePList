@@ -31,6 +31,10 @@
 		06D184302445C9AB00804CC9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06D1842F2445C9AB00804CC9 /* Localizable.strings */; };
 		06D258F624486F68006362DD /* Root.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 06D258F524486F68006362DD /* Root.bundle */; };
 		06E62771243B569800B3B68C /* HHAAssetTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E62770243B569800B3B68C /* HHAAssetTypeViewController.m */; };
+		06F125DA25DB57F200B56903 /* github.png in Resources */ = {isa = PBXBuildFile; fileRef = 06F125D925DB57F200B56903 /* github.png */; };
+		06F125DF25DB59DF00B56903 /* pulse.png in Resources */ = {isa = PBXBuildFile; fileRef = 06F125DC25DB59DF00B56903 /* pulse.png */; };
+		06F125E025DB59DF00B56903 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 06F125DD25DB59DF00B56903 /* gear.png */; };
+		06F125E125DB59DF00B56903 /* gift.png in Resources */ = {isa = PBXBuildFile; fileRef = 06F125DE25DB59DF00B56903 /* gift.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +80,10 @@
 		06D258F524486F68006362DD /* Root.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Root.bundle; sourceTree = "<group>"; };
 		06E6276F243B569800B3B68C /* HHAAssetTypeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHAAssetTypeViewController.h; sourceTree = "<group>"; };
 		06E62770243B569800B3B68C /* HHAAssetTypeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHAAssetTypeViewController.m; sourceTree = "<group>"; };
+		06F125D925DB57F200B56903 /* github.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = github.png; sourceTree = "<group>"; };
+		06F125DC25DB59DF00B56903 /* pulse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pulse.png; sourceTree = "<group>"; };
+		06F125DD25DB59DF00B56903 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
+		06F125DE25DB59DF00B56903 /* gift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gift.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,10 @@
 				0641AA1225DA71A20034F369 /* HHAReminderViewController.m */,
 				0641AA1325DA71A20034F369 /* HHAReminderViewController.xib */,
 				0641AA2025DA76520034F369 /* baozhu.png */,
+				06F125D925DB57F200B56903 /* github.png */,
+				06F125DD25DB59DF00B56903 /* gear.png */,
+				06F125DE25DB59DF00B56903 /* gift.png */,
+				06F125DC25DB59DF00B56903 /* pulse.png */,
 				0641AA2725DA773B0034F369 /* hongbao.png */,
 				06CF9BE2241508800020F927 /* HHAItemsViewController.h */,
 				06CF9BE3241508800020F927 /* HHAItemsViewController.m */,
@@ -218,15 +230,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				0641AA2825DA773B0034F369 /* hongbao.png in Resources */,
+				06F125DF25DB59DF00B56903 /* pulse.png in Resources */,
 				06BC24C0242CB89C00D08AD6 /* HHAItemCell.xib in Resources */,
 				06D184302445C9AB00804CC9 /* Localizable.strings in Resources */,
 				06D258F624486F68006362DD /* Root.bundle in Resources */,
+				06F125E125DB59DF00B56903 /* gift.png in Resources */,
+				06F125E025DB59DF00B56903 /* gear.png in Resources */,
 				06CF9BD9241503DA0020F927 /* LaunchScreen.storyboard in Resources */,
 				0641AA1525DA71A20034F369 /* HHAReminderViewController.xib in Resources */,
 				06D184222445C55700804CC9 /* HHADetailViewController.xib in Resources */,
 				0641AA2125DA76520034F369 /* baozhu.png in Resources */,
 				06CF9BD6241503DA0020F927 /* Assets.xcassets in Resources */,
 				06CF9BD4241503D90020F927 /* Main.storyboard in Resources */,
+				06F125DA25DB57F200B56903 /* github.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,7 +23,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.tabBarItem.image = [UIImage imageNamed:@"hongbao.png"];
+        self.tabBarItem.image = [UIImage imageNamed:@"gift.png"];
         self.tabBarItem.title = @"红包";
     }
     return self;
