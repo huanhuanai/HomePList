@@ -10,6 +10,7 @@
 #import "HHAItemStore.h"
 #import "HHAItemsViewController.h"
 #import "HHAReminderViewController.h"
+#import "HHACircleViewController.h"
 
 NSString *const HHANextItemValuePrefsKey = @"NextItemValue";
 NSString *const HHANextItemNamePrefsKey = @"NextItemName";
@@ -38,7 +39,8 @@ NSString *const HHANextItemNamePrefsKey = @"NextItemName";
     //该对象的栈只包含itemsViewController
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:itemsViewController];
         HHAReminderViewController *reminderController = [[HHAReminderViewController alloc] initWithNibName:@"HHAReminderViewController" bundle:[NSBundle mainBundle]];
-    tabC.viewControllers = @[navController, reminderController];
+        HHACircleViewController *cvc = [[HHACircleViewController alloc] init];
+    tabC.viewControllers = @[navController, reminderController, cvc];
     //将UINavigatonController对象的类名设置为恢复标识
     navController.restorationIdentifier = NSStringFromClass([navController class]);
     
