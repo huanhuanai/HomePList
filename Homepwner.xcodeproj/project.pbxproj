@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0638235425E11FCE00F1865E /* HHAHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0638235225E11FCE00F1865E /* HHAHypnosisView.m */; };
 		063D2D79241BA4DC003BAFD7 /* HHAImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 063D2D78241BA4DC003BAFD7 /* HHAImageStore.m */; };
 		0641AA1425DA71A20034F369 /* HHAReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0641AA1225DA71A20034F369 /* HHAReminderViewController.m */; };
 		0641AA1525DA71A20034F369 /* HHAReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0641AA1325DA71A20034F369 /* HHAReminderViewController.xib */; };
@@ -36,10 +37,11 @@
 		06F125E025DB59DF00B56903 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 06F125DD25DB59DF00B56903 /* gear.png */; };
 		06F125E125DB59DF00B56903 /* gift.png in Resources */ = {isa = PBXBuildFile; fileRef = 06F125DE25DB59DF00B56903 /* gift.png */; };
 		06F125E625DE9E3800B56903 /* HHACircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F125E425DE9E3800B56903 /* HHACircleViewController.m */; };
-		06F125F225DE9EF800B56903 /* HHAHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F125F025DE9EF800B56903 /* HHAHypnosisView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0638235225E11FCE00F1865E /* HHAHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHAHypnosisView.m; sourceTree = "<group>"; };
+		0638235325E11FCE00F1865E /* HHAHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAHypnosisView.h; sourceTree = "<group>"; };
 		063D2D77241BA4DC003BAFD7 /* HHAImageStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHAImageStore.h; sourceTree = "<group>"; };
 		063D2D78241BA4DC003BAFD7 /* HHAImageStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHAImageStore.m; sourceTree = "<group>"; };
 		0641AA1125DA71A20034F369 /* HHAReminderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHAReminderViewController.h; sourceTree = "<group>"; };
@@ -88,8 +90,6 @@
 		06F125DE25DB59DF00B56903 /* gift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gift.png; sourceTree = "<group>"; };
 		06F125E325DE9E3800B56903 /* HHACircleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHACircleViewController.h; sourceTree = "<group>"; };
 		06F125E425DE9E3800B56903 /* HHACircleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHACircleViewController.m; sourceTree = "<group>"; };
-		06F125F025DE9EF800B56903 /* HHAHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHAHypnosisView.m; sourceTree = "<group>"; };
-		06F125F125DE9EF800B56903 /* HHAHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAHypnosisView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,13 +138,13 @@
 				066CFA4B243CC57E0078F877 /* HHAItem+CoreDataClass */,
 				06CF9BC9241503D90020F927 /* HHAAppDelegate.h */,
 				06CF9BCA241503D90020F927 /* HHAAppDelegate.m */,
+				0638235325E11FCE00F1865E /* HHAHypnosisView.h */,
+				0638235225E11FCE00F1865E /* HHAHypnosisView.m */,
 				0641AA1125DA71A20034F369 /* HHAReminderViewController.h */,
 				0641AA1225DA71A20034F369 /* HHAReminderViewController.m */,
 				0641AA1325DA71A20034F369 /* HHAReminderViewController.xib */,
 				06F125E325DE9E3800B56903 /* HHACircleViewController.h */,
 				06F125E425DE9E3800B56903 /* HHACircleViewController.m */,
-				06F125F125DE9EF800B56903 /* HHAHypnosisView.h */,
-				06F125F025DE9EF800B56903 /* HHAHypnosisView.m */,
 				0641AA2025DA76520034F369 /* baozhu.png */,
 				06F125D925DB57F200B56903 /* github.png */,
 				06F125DD25DB59DF00B56903 /* gear.png */,
@@ -269,7 +269,7 @@
 				06CF9BCB241503D90020F927 /* HHAAppDelegate.m in Sources */,
 				06728F9E24192E0A00FD0F37 /* HHADetailViewController.m in Sources */,
 				06CF9BF3241517AA0020F927 /* HHAItemStore.m in Sources */,
-				06F125F225DE9EF800B56903 /* HHAHypnosisView.m in Sources */,
+				0638235425E11FCE00F1865E /* HHAHypnosisView.m in Sources */,
 				063D2D79241BA4DC003BAFD7 /* HHAImageStore.m in Sources */,
 				06CF9BDC241503DA0020F927 /* main.m in Sources */,
 				06BC24C3242CF28400D08AD6 /* HHAImageViewController.m in Sources */,
