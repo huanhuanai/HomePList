@@ -11,6 +11,7 @@
 #import "HHAItemsViewController.h"
 #import "HHAReminderViewController.h"
 #import "HHACircleViewController.h"
+#import "HHAPersonalViewControlelr.h"
 
 NSString *const HHANextItemValuePrefsKey = @"NextItemValue";
 NSString *const HHANextItemNamePrefsKey = @"NextItemName";
@@ -38,9 +39,10 @@ NSString *const HHANextItemNamePrefsKey = @"NextItemName";
     //创建UINavigationController对象
     //该对象的栈只包含itemsViewController
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:itemsViewController];
-        HHAReminderViewController *reminderController = [[HHAReminderViewController alloc] initWithNibName:@"HHAReminderViewController" bundle:[NSBundle mainBundle]];
-        HHACircleViewController *cvc = [[HHACircleViewController alloc] init];
-    tabC.viewControllers = @[navController, reminderController, cvc];
+    HHAReminderViewController *reminderController = [[HHAReminderViewController alloc] initWithNibName:@"HHAReminderViewController" bundle:[NSBundle mainBundle]];
+    HHACircleViewController *cvc = [[HHACircleViewController alloc] init];
+    HHAPersonalViewControlelr *pvc = [[HHAPersonalViewControlelr alloc] init];
+    tabC.viewControllers = @[navController, reminderController, cvc, pvc];
     //将UINavigatonController对象的类名设置为恢复标识
     navController.restorationIdentifier = NSStringFromClass([navController class]);
     
@@ -70,13 +72,6 @@ NSString *const HHANextItemNamePrefsKey = @"NextItemName";
     return YES;
 }
 
-- (BOOL)application:(UIApplication *)application shouldSaveSecureApplicationState:(nonnull NSCoder *)coder {
-    return YES;
-}
-
-- (BOOL)application:(UIApplication *)application shouldRestoreSecureApplicationState:(nonnull NSCoder *)coder {
-    return YES;
-}
 
 - (UIViewController *)application:(UIApplication *)application viewControllerWithRestorationIdentifierPath:(NSArray<NSString *> *)identifierComponents coder:(NSCoder *)coder {
     //创建一个新的UINavigationController对象

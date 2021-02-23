@@ -18,6 +18,8 @@
 		0676F242243AE8F900757410 /* HHAItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0676F240243AE8F900757410 /* HHAItem+CoreDataProperties.m */; };
 		068924C1243A3BBA002D536D /* Homepwner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 068924BF243A3BBA002D536D /* Homepwner.xcdatamodeld */; };
 		068924C4243A3D00002D536D /* HHAImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 068924C3243A3D00002D536D /* HHAImageTransformer.m */; };
+		06B4B6D125E53BBC005EB8BC /* HHAPersonalViewControlelr.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B4B6CF25E53BBC005EB8BC /* HHAPersonalViewControlelr.m */; };
+		06B4B6D225E53BBC005EB8BC /* HHAPersonalViewControlelr.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06B4B6D025E53BBC005EB8BC /* HHAPersonalViewControlelr.xib */; };
 		06BC24BE242CB86400D08AD6 /* HHAItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BC24BD242CB86400D08AD6 /* HHAItemCell.m */; };
 		06BC24C0242CB89C00D08AD6 /* HHAItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06BC24BF242CB89C00D08AD6 /* HHAItemCell.xib */; };
 		06BC24C3242CF28400D08AD6 /* HHAImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BC24C2242CF28400D08AD6 /* HHAImageViewController.m */; };
@@ -59,6 +61,9 @@
 		068924C0243A3BBA002D536D /* Homepwner.xcdatamodel */ = {isa = PBXFileReference; explicitFileType = wrapper.xcdatamodel; path = Homepwner.xcdatamodel; sourceTree = "<group>"; };
 		068924C2243A3D00002D536D /* HHAImageTransformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHAImageTransformer.h; sourceTree = "<group>"; };
 		068924C3243A3D00002D536D /* HHAImageTransformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHAImageTransformer.m; sourceTree = "<group>"; };
+		06B4B6CE25E53BBC005EB8BC /* HHAPersonalViewControlelr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHAPersonalViewControlelr.h; sourceTree = "<group>"; };
+		06B4B6CF25E53BBC005EB8BC /* HHAPersonalViewControlelr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHAPersonalViewControlelr.m; sourceTree = "<group>"; };
+		06B4B6D025E53BBC005EB8BC /* HHAPersonalViewControlelr.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HHAPersonalViewControlelr.xib; sourceTree = "<group>"; };
 		06BC24BC242CB86400D08AD6 /* HHAItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHAItemCell.h; sourceTree = "<group>"; };
 		06BC24BD242CB86400D08AD6 /* HHAItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHAItemCell.m; sourceTree = "<group>"; };
 		06BC24BF242CB89C00D08AD6 /* HHAItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HHAItemCell.xib; sourceTree = "<group>"; };
@@ -115,6 +120,16 @@
 			path = "HHAItem+CoreDataClass";
 			sourceTree = "<group>";
 		};
+		06B4B6CD25E53B74005EB8BC /* HHAPersonalViewController */ = {
+			isa = PBXGroup;
+			children = (
+				06B4B6CE25E53BBC005EB8BC /* HHAPersonalViewControlelr.h */,
+				06B4B6CF25E53BBC005EB8BC /* HHAPersonalViewControlelr.m */,
+				06B4B6D025E53BBC005EB8BC /* HHAPersonalViewControlelr.xib */,
+			);
+			path = HHAPersonalViewController;
+			sourceTree = "<group>";
+		};
 		06CF9BBD241503D80020F927 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +150,7 @@
 		06CF9BC8241503D90020F927 /* Homepwner */ = {
 			isa = PBXGroup;
 			children = (
+				06B4B6CD25E53B74005EB8BC /* HHAPersonalViewController */,
 				06FFE25B25E1298400524F6E /* HHAHomepwner */,
 				06FFE25A25E1295700524F6E /* TabBarItemImage */,
 				06FFE25925E1293400524F6E /* HHAHypnosisViewController */,
@@ -284,6 +300,7 @@
 				0641AA2125DA76520034F369 /* baozhu.png in Resources */,
 				06CF9BD6241503DA0020F927 /* Assets.xcassets in Resources */,
 				06CF9BD4241503D90020F927 /* Main.storyboard in Resources */,
+				06B4B6D225E53BBC005EB8BC /* HHAPersonalViewControlelr.xib in Resources */,
 				06F125DA25DB57F200B56903 /* github.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +324,7 @@
 				06BC24C3242CF28400D08AD6 /* HHAImageViewController.m in Sources */,
 				06CF9BE4241508800020F927 /* HHAItemsViewController.m in Sources */,
 				0641AA1425DA71A20034F369 /* HHAReminderViewController.m in Sources */,
+				06B4B6D125E53BBC005EB8BC /* HHAPersonalViewControlelr.m in Sources */,
 				068924C1243A3BBA002D536D /* Homepwner.xcdatamodeld in Sources */,
 				0676F242243AE8F900757410 /* HHAItem+CoreDataProperties.m in Sources */,
 				06F125E625DE9E3800B56903 /* HHACircleViewController.m in Sources */,

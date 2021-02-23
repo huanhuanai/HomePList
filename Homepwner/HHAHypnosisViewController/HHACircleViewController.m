@@ -19,7 +19,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.tabBarItem.title = @"催眠";
-        self.tabBarItem.image = [UIImage imageNamed:@"gift.png"];
+        self.tabBarItem.image = [UIImage imageNamed:@"pulse.png"];
     }
     return self;
 }

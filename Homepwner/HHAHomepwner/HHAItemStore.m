@@ -32,7 +32,9 @@
 
 - (instancetype)init
 {
-    @throw [NSException exceptionWithName:@"Singleton" reason:@"Use + [HHAItemStore sharedStore]" userInfo:nil];
+    @throw [NSException exceptionWithName:@"Singleton"
+                                   reason:@"Use + [HHAItemStore sharedStore]"
+                                 userInfo:nil];
     return nil;
 }
 
@@ -80,7 +82,8 @@
         order = [[self.privateItems lastObject] orderingValue] + 1.0;
     }
     NSLog(@"Adding after %lu items, order = %.2f", [self.privateItems count], order);
-    HHAItem *item = [NSEntityDescription insertNewObjectForEntityForName:@"HHAItem" inManagedObjectContext:self.contex];
+    HHAItem *item = [NSEntityDescription insertNewObjectForEntityForName:@"HHAItem"
+                                                  inManagedObjectContext:self.contex];
     item.orderingValue = order;
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
