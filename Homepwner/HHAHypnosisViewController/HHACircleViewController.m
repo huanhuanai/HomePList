@@ -27,8 +27,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     CGRect frame = [UIScreen mainScreen].bounds;
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:frame];
+    
+    CGRect bounds = frame;
+    bounds.size.width *= 2.0;
+    scrollView.contentSize = bounds.size;
+    scrollView.pagingEnabled = YES;
+    
     HHAHypnosisView *hv = [[HHAHypnosisView alloc] initWithFrame:frame];
-    [self.view addSubview:hv];
+    
+    frame.origin.x += frame.size.width;
+    HHAHypnosisView *shv = [[HHAHypnosisView alloc] initWithFrame:frame];
+    
+    [self.view addSubview:scrollView];
+    [scrollView addSubview:hv];
+    [scrollView addSubview:shv];
 }
 
 
