@@ -11,7 +11,7 @@
 #import "HHAItemsViewController.h"
 #import "HHAReminderViewController.h"
 #import "HHACircleViewController.h"
-#import "HHAPersonalViewControlelr.h"
+#import "HHAPersonalViewController.h"
 
 NSString *const HHANextItemValuePrefsKey = @"NextItemValue";
 NSString *const HHANextItemNamePrefsKey = @"NextItemName";
@@ -41,7 +41,7 @@ NSString *const HHANextItemNamePrefsKey = @"NextItemName";
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:itemsViewController];
     HHAReminderViewController *reminderController = [[HHAReminderViewController alloc] initWithNibName:@"HHAReminderViewController" bundle:[NSBundle mainBundle]];
     HHACircleViewController *cvc = [[HHACircleViewController alloc] init];
-    HHAPersonalViewControlelr *pvc = [[HHAPersonalViewControlelr alloc] init];
+    HHAPersonalViewController *pvc = [[HHAPersonalViewController alloc] init];
     tabC.viewControllers = @[navController, reminderController, cvc, pvc];
     //将UINavigatonController对象的类名设置为恢复标识
     navController.restorationIdentifier = NSStringFromClass([navController class]);
