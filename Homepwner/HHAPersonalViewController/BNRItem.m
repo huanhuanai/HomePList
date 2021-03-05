@@ -6,9 +6,9 @@
 //  Copyright © 2020 huan. All rights reserved.
 //
 
-#import "HHAItems.h"
+#import "BNRItem.h"
 
-@implementation HHAItems
+@implementation BNRItem
 
 + (instancetype)randomItem {
     //创建不可变数组对象，包含三个形容词
@@ -30,7 +30,7 @@
                    randomAdjectiveList[adjectiveIndex],
                         randomNounList[nounIndex]];
     
-    int randomValue = arc4random() % 100;
+    NSInteger randomValue = arc4random() % 100;
     
     NSString *randomSerialNumber = [NSString stringWithFormat:@"%c%c%c%c%c",
                                     '0' + arc4random() % 10,
@@ -39,12 +39,12 @@
                                     'A' + arc4random() % 26,
                                     '0' + arc4random() % 10];
     
-    HHAItems *newItem = [[self alloc] initWithItemName:randomName valueInDollars:randomValue serialNumber:randomSerialNumber];
+    BNRItem *newItem = [[self alloc] initWithItemName:randomName valueInDollars:randomValue serialNumber:randomSerialNumber];
     return newItem;
 }
 
 - (instancetype)initWithItemName:(NSString *)name
-                  valueInDollars:(int)value
+                  valueInDollars:(NSInteger)value
                     serialNumber:(NSString *)sNumber {
     //调用父类的指定初始化方法
     self = [super init];
@@ -75,40 +75,11 @@
 
 - (NSString *)description {
     NSString *descriptionString =
-        [[NSString alloc] initWithFormat:@"%@(%@):Worth $%d, recorded on %@",
+        [[NSString alloc] initWithFormat:@"%@(%@):Worth $%ld, recorded on %@",
          self.itemName,
          self.serialNumber,
          self.valueInDollars,
          self.dateCreated];
     return descriptionString;
 }
-
-- (void)setItemName:(NSString *)str {
-    _itemName = str;
-}
-
-- (NSString *)itemName {
-    return _itemName;
-}
-
-- (void)setSerialNumber:(NSString *)str {
-    _serialNumber = str;
-}
-
-- (NSString *)serialNumber {
-    return _serialNumber;
-}
-
-- (void)setValueInDollars:(int)v {
-    _valueInDollars = v;
-}
-
-- (int)valueInDollars {
-    return _valueInDollars;
-}
-
-- (NSDate *)dateCreated {
-    return _dateCreated;
-}
-
 @end

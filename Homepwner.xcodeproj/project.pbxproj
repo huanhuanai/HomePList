@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0602DAF625EE8897001762B2 /* HHAItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 0602DAF025EE8897001762B2 /* HHAItems.m */; };
-		0602DAF725EE8897001762B2 /* HHAPersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0602DAF125EE8897001762B2 /* HHAPersonalViewController.m */; };
-		0602DAF825EE8897001762B2 /* HHAItemsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0602DAF225EE8897001762B2 /* HHAItemsStore.m */; };
 		0638235425E11FCE00F1865E /* HHAHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0638235225E11FCE00F1865E /* HHAHypnosisView.m */; };
 		063D2D79241BA4DC003BAFD7 /* HHAImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 063D2D78241BA4DC003BAFD7 /* HHAImageStore.m */; };
 		0641AA1425DA71A20034F369 /* HHAReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0641AA1225DA71A20034F369 /* HHAReminderViewController.m */; };
 		0641AA1525DA71A20034F369 /* HHAReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0641AA1325DA71A20034F369 /* HHAReminderViewController.xib */; };
 		0641AA2125DA76520034F369 /* baozhu.png in Resources */ = {isa = PBXBuildFile; fileRef = 0641AA2025DA76520034F369 /* baozhu.png */; };
 		0641AA2825DA773B0034F369 /* hongbao.png in Resources */ = {isa = PBXBuildFile; fileRef = 0641AA2725DA773B0034F369 /* hongbao.png */; };
+		06626B4525F2711C00364C3B /* BNRItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 06626B3D25F2711C00364C3B /* BNRItemStore.m */; };
+		06626B4625F2711C00364C3B /* BNRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06626B4025F2711C00364C3B /* BNRDetailViewController.m */; };
+		06626B4725F2711C00364C3B /* BNRDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06626B4225F2711C00364C3B /* BNRDetailViewController.xib */; };
+		06626B4825F2711C00364C3B /* BNRItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06626B4325F2711C00364C3B /* BNRItemsViewController.m */; };
+		06626B4925F2711C00364C3B /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 06626B4425F2711C00364C3B /* BNRItem.m */; };
 		06728F9E24192E0A00FD0F37 /* HHADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06728F9C24192E0A00FD0F37 /* HHADetailViewController.m */; };
 		0676F241243AE8F900757410 /* HHAItem+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0676F23F243AE8F900757410 /* HHAItem+CoreDataClass.m */; };
 		0676F242243AE8F900757410 /* HHAItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0676F240243AE8F900757410 /* HHAItem+CoreDataProperties.m */; };
@@ -43,12 +45,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0602DAF025EE8897001762B2 /* HHAItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHAItems.m; sourceTree = "<group>"; };
-		0602DAF125EE8897001762B2 /* HHAPersonalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHAPersonalViewController.m; sourceTree = "<group>"; };
-		0602DAF225EE8897001762B2 /* HHAItemsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHAItemsStore.m; sourceTree = "<group>"; };
-		0602DAF325EE8897001762B2 /* HHAItemsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAItemsStore.h; sourceTree = "<group>"; };
-		0602DAF425EE8897001762B2 /* HHAItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAItems.h; sourceTree = "<group>"; };
-		0602DAF525EE8897001762B2 /* HHAPersonalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAPersonalViewController.h; sourceTree = "<group>"; };
 		0638235225E11FCE00F1865E /* HHAHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHAHypnosisView.m; sourceTree = "<group>"; };
 		0638235325E11FCE00F1865E /* HHAHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAHypnosisView.h; sourceTree = "<group>"; };
 		063D2D77241BA4DC003BAFD7 /* HHAImageStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHAImageStore.h; sourceTree = "<group>"; };
@@ -58,6 +54,15 @@
 		0641AA1325DA71A20034F369 /* HHAReminderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HHAReminderViewController.xib; sourceTree = "<group>"; };
 		0641AA2025DA76520034F369 /* baozhu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baozhu.png; sourceTree = "<group>"; };
 		0641AA2725DA773B0034F369 /* hongbao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hongbao.png; sourceTree = "<group>"; };
+		06626B3C25F2711C00364C3B /* BNRDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRDetailViewController.h; sourceTree = "<group>"; };
+		06626B3D25F2711C00364C3B /* BNRItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItemStore.m; sourceTree = "<group>"; };
+		06626B3E25F2711C00364C3B /* BNRItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItemsViewController.h; sourceTree = "<group>"; };
+		06626B3F25F2711C00364C3B /* BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItem.h; sourceTree = "<group>"; };
+		06626B4025F2711C00364C3B /* BNRDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRDetailViewController.m; sourceTree = "<group>"; };
+		06626B4125F2711C00364C3B /* BNRItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItemStore.h; sourceTree = "<group>"; };
+		06626B4225F2711C00364C3B /* BNRDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRDetailViewController.xib; sourceTree = "<group>"; };
+		06626B4325F2711C00364C3B /* BNRItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItemsViewController.m; sourceTree = "<group>"; };
+		06626B4425F2711C00364C3B /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
 		06728F9B24192E0A00FD0F37 /* HHADetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHADetailViewController.h; sourceTree = "<group>"; };
 		06728F9C24192E0A00FD0F37 /* HHADetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHADetailViewController.m; sourceTree = "<group>"; };
 		0676F210243AD41A00757410 /* Homepwner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Homepwner-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -127,12 +132,15 @@
 		06B4B6CD25E53B74005EB8BC /* HHAPersonalViewController */ = {
 			isa = PBXGroup;
 			children = (
-				0602DAF425EE8897001762B2 /* HHAItems.h */,
-				0602DAF025EE8897001762B2 /* HHAItems.m */,
-				0602DAF325EE8897001762B2 /* HHAItemsStore.h */,
-				0602DAF225EE8897001762B2 /* HHAItemsStore.m */,
-				0602DAF525EE8897001762B2 /* HHAPersonalViewController.h */,
-				0602DAF125EE8897001762B2 /* HHAPersonalViewController.m */,
+				06626B3C25F2711C00364C3B /* BNRDetailViewController.h */,
+				06626B4025F2711C00364C3B /* BNRDetailViewController.m */,
+				06626B4225F2711C00364C3B /* BNRDetailViewController.xib */,
+				06626B3F25F2711C00364C3B /* BNRItem.h */,
+				06626B4425F2711C00364C3B /* BNRItem.m */,
+				06626B4125F2711C00364C3B /* BNRItemStore.h */,
+				06626B3D25F2711C00364C3B /* BNRItemStore.m */,
+				06626B3E25F2711C00364C3B /* BNRItemsViewController.h */,
+				06626B4325F2711C00364C3B /* BNRItemsViewController.m */,
 			);
 			path = HHAPersonalViewController;
 			sourceTree = "<group>";
@@ -303,6 +311,7 @@
 				06F125E025DB59DF00B56903 /* gear.png in Resources */,
 				06CF9BD9241503DA0020F927 /* LaunchScreen.storyboard in Resources */,
 				0641AA1525DA71A20034F369 /* HHAReminderViewController.xib in Resources */,
+				06626B4725F2711C00364C3B /* BNRDetailViewController.xib in Resources */,
 				06D184222445C55700804CC9 /* HHADetailViewController.xib in Resources */,
 				0641AA2125DA76520034F369 /* baozhu.png in Resources */,
 				06CF9BD6241503DA0020F927 /* Assets.xcassets in Resources */,
@@ -322,8 +331,7 @@
 				06E62771243B569800B3B68C /* HHAAssetTypeViewController.m in Sources */,
 				0676F241243AE8F900757410 /* HHAItem+CoreDataClass.m in Sources */,
 				06CF9BCB241503D90020F927 /* HHAAppDelegate.m in Sources */,
-				0602DAF725EE8897001762B2 /* HHAPersonalViewController.m in Sources */,
-				0602DAF625EE8897001762B2 /* HHAItems.m in Sources */,
+				06626B4825F2711C00364C3B /* BNRItemsViewController.m in Sources */,
 				06728F9E24192E0A00FD0F37 /* HHADetailViewController.m in Sources */,
 				06CF9BF3241517AA0020F927 /* HHAItemStore.m in Sources */,
 				0638235425E11FCE00F1865E /* HHAHypnosisView.m in Sources */,
@@ -332,10 +340,12 @@
 				06BC24C3242CF28400D08AD6 /* HHAImageViewController.m in Sources */,
 				06CF9BE4241508800020F927 /* HHAItemsViewController.m in Sources */,
 				0641AA1425DA71A20034F369 /* HHAReminderViewController.m in Sources */,
+				06626B4625F2711C00364C3B /* BNRDetailViewController.m in Sources */,
 				068924C1243A3BBA002D536D /* Homepwner.xcdatamodeld in Sources */,
 				0676F242243AE8F900757410 /* HHAItem+CoreDataProperties.m in Sources */,
+				06626B4525F2711C00364C3B /* BNRItemStore.m in Sources */,
+				06626B4925F2711C00364C3B /* BNRItem.m in Sources */,
 				06F125E625DE9E3800B56903 /* HHACircleViewController.m in Sources */,
-				0602DAF825EE8897001762B2 /* HHAItemsStore.m in Sources */,
 				068924C4243A3D00002D536D /* HHAImageTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

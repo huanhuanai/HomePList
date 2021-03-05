@@ -10,32 +10,22 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HHAItems : NSObject
-{
-    NSString *_itemName;
-    NSString *_serialNumber;
-    int _valueInDollars;
-    NSDate *_dateCreated;
-}
+@interface BNRItem : NSObject
+
+@property (nonatomic, strong) NSString *itemName;
+@property (nonatomic, strong) NSString *serialNumber;
+@property (nonatomic) NSInteger valueInDollars;
+@property (nonatomic, strong) NSDate *dateCreated;
+
 
 + (instancetype)randomItem;
 
 - (instancetype)initWithItemName:(NSString *)name
-                  valueInDollars:(int)value
+                  valueInDollars:(NSInteger)value
                     serialNumber:(NSString *)sNumber;
 
 - (instancetype)initWithItemName:(NSString *)name;
 
-- (void)setItemName:(NSString *)str;
-- (NSString *)itemName;
-
-- (void)setSerialNumber:(NSString *)str;
-- (NSString *)serialNumber;
-
-- (void)setValueInDollars:(int)v;
-- (int)valueInDollars;
-
-- (NSDate *)dateCreated;
 @end
 
 NS_ASSUME_NONNULL_END
