@@ -65,7 +65,6 @@
 		06626B4425F2711C00364C3B /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
 		06728F9B24192E0A00FD0F37 /* HHADetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHADetailViewController.h; sourceTree = "<group>"; };
 		06728F9C24192E0A00FD0F37 /* HHADetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHADetailViewController.m; sourceTree = "<group>"; };
-		0676F210243AD41A00757410 /* Homepwner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Homepwner-Bridging-Header.h"; sourceTree = "<group>"; };
 		0676F23D243AE8F900757410 /* HHAItem+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HHAItem+CoreDataProperties.h"; sourceTree = "<group>"; };
 		0676F23E243AE8F900757410 /* HHAItem+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HHAItem+CoreDataClass.h"; sourceTree = "<group>"; };
 		0676F23F243AE8F900757410 /* HHAItem+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HHAItem+CoreDataClass.m"; sourceTree = "<group>"; };
@@ -150,7 +149,6 @@
 			children = (
 				06CF9BC8241503D90020F927 /* Homepwner */,
 				06CF9BC7241503D90020F927 /* Products */,
-				0676F210243AD41A00757410 /* Homepwner-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
